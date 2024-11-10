@@ -1,0 +1,79 @@
+---
+title: Article
+---
+extends shared/_layout
+block content
+
+  .container.page-h-offset.pt-4
+    .col
+      h1 Template text block varients
+
+      p 
+        strong Usage: 
+        | Home
+      code p.fs-2 
+
+  include ../components/section/_2-col-IL.pug
+
+  .container.pt-4
+    .col
+      p
+        strong Usage: 
+        | Projects Detail
+      code
+        br
+        | .pl-1.fs-2
+
+  include ../components/section/_2col_section_IR.pug
+
+  .container.pt-4
+    .col
+      p 
+        strong Usage: 
+        | About | People
+      code .fs-1
+  include ../components/section/_1col_center-block.pug    
+  include ../components/section/_1col_center-block[people].pug    
+  include ../components/home/_home-intro.pug 
+
+  .container.pt-4
+    .col
+      h1 Header Varient blocks
+    .col
+      p
+        strong Usage: 
+        | Contact
+      code
+        br
+        | h1.text-center.mt-1
+        br
+        | .fs-2.mt-1.mb-2
+
+  include ../components/hero/_contact_hero.pug
+ 
+  .container.pt-4
+    .col
+      p
+        strong Usage: 
+        | Services
+      code
+        | .fs-2.mt-2.mb-2
+
+  include ../components/hero/_inc_services_hero.pug      
+
+  .container.pt-4
+    .col
+      h1 quote blocks
+      p
+        strong Usage: 
+        | news-detail, project-detail
+      code
+        | .display-5
+
+  include ../components/section/_quote[1].pug
+  
+  .mb-2
+  
+  include ../components/section/_quote_section_people.pug
+  
+  .mb-2

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        {% include "inc-common-meta.twig" %}
+
+    </head>
+
+    <body>
+
+        <!-- place where pjax bindings happen's-->
+
+        <div id="barba-wrapper">
+
+            {% include "inc-common-header.twig" %}
+
+            {% include "inc-common-mobilenav.twig" %}
+
+            <!-- what should be changed with every pjax-->
+
+            <div class="page page-h-offset">
+
+                <main class="page__content ">
+
+                    {% include "inc-newslist.twig" %}
+
+                </main>
+
+                {% include "inc-common-footer.twig" %}
+
+            </div>
+
+            {% include "inc-common-footerscripts.twig" %}
+
+        </div>
+
+    </body>
+
+</html>

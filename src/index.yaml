@@ -1,0 +1,47 @@
+ProjectTitle: Welsh Power
+
+PageList:
+  - file: about_2.html
+    ready: 95    
+  - file: whyWP.html
+    ready: 95
+  - file: developing.html
+    ready: 95    
+  - file: assets.html
+    ready: 95   
+  - file: homepage.html
+    ready: 95
+  - file: about.html
+    ready: 95
+  - file: people.html
+    ready: 95
+  - file: people-detail.html
+    ready: 95
+  - file: projects.html
+    ready: 95
+  - file: projects-detail.html
+    ready: 95
+  - file: article.html
+    ready: 10
+  - file: privacy.html
+    ready: 10
+  # - file: blocks.html
+  #   ready: 10
+  - file: contact.html
+    ready: 95
+  # - file: contact-form.html
+  #   ready: 95
+  - file: services.html
+    ready: 95
+  - file: our-services.html
+    ready: 95
+  - file: news-detail.html
+    ready: 95
+  - file: 404.html
+    ready: 95
+  # - file: objects.html
+  #   ready: 10
+  - file: theme.html
+    ready: 10
+  - file: tpl_hero_blocks.html
+    ready: 10

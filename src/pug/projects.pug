@@ -1,0 +1,54 @@
+---
+title: Projects
+---
+extends shared/_layout
+block content
+
+  section.red.header-wrapper.page-h-offset
+    .container
+      .row 
+        .col-12 
+          p.fs-4.fw-light.mt-1 Projects
+            a.btn.btn-outline-light.btn-sm.float-end(href="#") Read More
+      
+  include ../components/projects/_mapblock.pug
+
+  //- section.green
+  //-   .container
+  //-     .row.g-0
+  //-       .col-12.col-lg-4
+  //-         h1.mt-2.pe-3 Discover our  flexible generation and multiple grid stability projects around the UK…
+  //-         .row.mt-2.g-0
+  //-           .col12.col-xs-12.col-sm-6.col-lg-12 
+  //-             p.text-center 
+  //-               img(src="img/ICON_windturbine.png", alt="")
+   
+  //-             p.pe-4 High efficiency, low emission gas-fired reciprocating engine power plant, supporting the UK network.   
+  //-           .col12.col-xs-12.col-sm-6.col-lg-12 
+  //-             p.text-center 
+  //-               img(src="img/ICON_pylon.png", alt="")
+ 
+  //-             p.pe-4 Welsh Power is at the forefront of delivering essential services independent of active power generation, typified by a project in South Wales that incorporates a synchronous condenser and flywheel.
+  //-       .col-12.col-lg-8.gmap
+  //-         iframe(src='https://snazzymaps.com/embed/335637' width='100%' height='100%' style='border:none;')
+
+
+  // include ../components/hero/_projects-hero.pug
+  
+
+
+  include ../components/projects/_projects_6blocks.pug
+
+  include ../components/section/_green-block-hp-2[1].pug 
+
+  section.calling.mt-3 
+    .container 
+      .row 
+        .col-12.col-md-8.offset-md-2
+          p.text-center 
+            img.m-auto.img-fluid(src="img/wp_hills_illustration_ma.svg", alt="Landowners") 
+        .col-12.col-md-8.offset-md-2.my-5.text-center
+          p.fs-2 Since 2006, we have worked with landowners across the UK. 
+          p.fs-2 text-center If you are a landowner and think your land would suit our future developments (for grid stability, battery storage, wind turbines etc) and you’re interested in either a sale or a long term lease on competitive commercial terms, please get in touch.
+          p.mt-2
+            a.btn.btn-outline-success.text-center.mx-auto(href="#") Call us

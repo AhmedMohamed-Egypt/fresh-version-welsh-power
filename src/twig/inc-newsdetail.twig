@@ -1,0 +1,40 @@
+{% if news.main_img != '' %}
+    <div class="hero blank ratio ratio-21x9 page-h-offset">
+        <div class="hero__background">{{news.main_img|raw}}
+            <div class="hero--band">
+                <span>&nbsp;
+                </span>
+            </div>
+        </div>
+    </div>
+{% endif %}
+<section class="news content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-10 offset-md-1 news-title">
+                <h1 class="display-5 red my-5 lh-1">
+                    {% if news.detail_title != '' %}
+                        {{news.detail_title|raw}}
+                    {% else %}
+                        {{news.news_title|raw}}
+                    {% endif %}
+                </h1>
+            </div>
+            <div class="col-12 mt-2 col-md-10 offset-md-1">
+                {{news.detail_intro_text|raw}}
+                {{news.detail_long_text|raw}}
+            </div>
+        </div>
+    </div>
+</section>
+{% if news.testimonial != '' %}
+    <section class="gray mt-4 quote">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 my-5 fs-1 fw-lighter text-center mx-auto">
+                    {{news.testimonial|raw}}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include "inc-common-meta.twig" %}
+    </head>
+    <body>
+        <!-- place where pjax bindings happen's-->
+        <div id="barba-wrapper">
+            {% include "inc-common-header.twig" %}
+            {% include "inc-common-mobilenav.twig" %}
+            <!-- what should be changed with every pjax-->
+            <div class="page">
+
+                <main
+                    class="page__content ">
+
+                    <!-- start hero block-->
+                    <div class="hero blank ratio ratio-21x9 page-h-offset">
+                        <div class="hero__background">
+                            <img src="https://res.cloudinary.com/welshpower/image/upload/f_auto,q_auto/v1631739579/assets/images/article_image/1631739578_11948_people_hero.jpg">
+                            <div class="hero--band">
+                                <span>&nbsp;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End hero block-->
+
+                    {{ banners[6]|raw }}
+                    {% include "inc-peoplelist.twig" %}
+                    {{ banners[7]|raw }}
+                </main>
+                {% include "inc-common-footer.twig" %}
+            </div>
+            {% include "inc-common-footerscripts.twig" %}
+        </div>
+    </body>
+</html>

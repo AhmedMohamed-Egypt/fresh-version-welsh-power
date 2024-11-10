@@ -1,0 +1,52 @@
+section.pt-3.pb-3.blk-grey
+  .container
+    .row.aos-init.aos-animate(data-aos='fade-up')
+      .col-11.mx-auto
+        h1.h1-title.mt-2(data-aos='fade-up') Contact us
+        p(data-aos='fade-up')
+          | Time high vast pillared weary fountain plain had he and, domestic fellow the sea found of. Thence of neer men.
+
+  .container
+    .col-11.mx-auto.mb-5
+      form#contactForm(data-sb-form-api-token="API_TOKEN" ata-aos='fade')
+          .form-floating.mb-1
+              input.form-control#name(type="text", placeholder="Name", data-sb-validations="required")
+              label(for="name") Name
+              .invalid-feedback(data-sb-feedback="name:required") Name is required.
+          .form-floating.mb-1
+              input.form-control#companyOrganisation(type="text", placeholder="Company / Organisation", data-sb-validations="required")
+              label(for="companyOrganisation") Company / Organisation
+              .invalid-feedback(data-sb-feedback="companyOrganisation:required") Company / Organisation is required.
+          .form-floating.mb-1
+              input.form-control#emailAddress(type="email", placeholder="Email Address", data-sb-validations="required,email")
+              label(for="emailAddress") Email Address
+              .invalid-feedback(data-sb-feedback="emailAddress:required") Email Address is required.
+              .invalid-feedback(data-sb-feedback="emailAddress:email") Email Address Email is not valid.
+          .form-floating.mb-1
+              input.form-control#telephoneNumber(type="text", placeholder="Telephone Number", data-sb-validations="required")
+              label(for="telephoneNumber") Telephone Number
+              .invalid-feedback(data-sb-feedback="telephoneNumber:required") Telephone Number is required.
+          .form-floating.mb-1
+              textarea.form-control#message(type="text", placeholder="Message", style='height: 10rem;', data-sb-validations="")
+              label(for="message") Message
+              
+          .input-group.mb-2
+                label.input-group-text(for='inputGroupFile01') Upload
+                input#inputGroupFile01.form-control(type='file')
+
+          .mb-3
+              label.form-label.d-block 
+                | Please confirm you have read and agree to our 
+                a.link-secondary(href='/privacy-policy.html') privacy notice
+                  .form-check.form-check-inline
+                      input.form-check-input#yes(type="checkbox", name="pleaseConfirmYouHaveReadAndAgreeToOurPrivacyNotice", data-sb-validations="")
+                      label.form-check-label(for="yes") Yes
+          .d-none#submitSuccessMessage
+              .text-center.mb-1
+                  .fw-bolder Form submission successful!
+                  p To activate this form, sign up at
+                  a(href="https://startbootstrap.com/solution/contact-forms") https://startbootstrap.com/solution/contact-forms
+          .d-none#submitErrorMessage
+              .text-center.text-danger.mb-3 Error sending message!
+          .d-grid
+              button.btn.btn-success.btn-lg.disabled#submitButton(type="submit") Submit

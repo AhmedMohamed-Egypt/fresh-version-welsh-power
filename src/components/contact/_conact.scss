@@ -1,0 +1,34 @@
+@import '../../sass/utilities/_variables.sass';
+
+.bg-gray {
+    background-color: $wp_lgray;
+}
+
+.contact-block {
+    // test
+    h2 {
+        padding: 12px 0;
+        border-bottom: 1px solid $wp_lgray;
+        // color: $wp_dred;
+        // font-size: 1.2rem;
+    }
+    .btn {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+    }
+    img,
+    svg {
+        margin-right: 0.5rem;
+    }
+    svg {
+        size: 1.2rem;
+        fill: $wp_dgray;
+    }
+}
+
+.contact-header {
+    background-image: url('../img/contact-banner.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include "inc-common-meta.twig" %}
+    </head>
+    <body>
+        <!-- place where pjax bindings happen's-->
+        <div id="barba-wrapper">
+            {% include "inc-common-header.twig" %}
+            {% include "inc-common-mobilenav.twig" %}
+            <!-- what should be changed with every pjax-->
+            <div class="page">
+                <main class="page__content ">
+
+                    {% include "inc-services-secondary-header.twig" %}
+
+                    {{ banners[8]|raw }}
+                    {{ banners[9]|raw }}
+
+                    {% include "inc-services-grid.twig" %}
+
+                    {{ banners[15]|raw }}
+
+                    <section class="intro small" data-aos="fade">
+                        <div class="container mt-4 mb-4">
+                            <div class="row">
+                                <div class="col-12 col-md-8 offset-md-2 lead">
+                                    {{ articles.long_text|raw }}
+                                    {{ articles.post_article_text|raw }}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mb-3 mt-3">
+                                    <img class="img-fluid w-100 shadow" src="{{ articles.article_image|raw }}" alt="" data-aos="fade-up"></div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    {{ banners[16]|raw }}
+
+                </main>
+                {% include "inc-common-footer.twig" %}
+            </div>
+            {% include "inc-common-footerscripts.twig" %}
+        </div>
+    </body>
+</html>

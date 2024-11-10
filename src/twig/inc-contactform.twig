@@ -1,0 +1,81 @@
+<section class="bg-gray page-h-offset pt-3 pb-3 contact-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <h1 class="text-center mt-1">{{articles.article_title|raw}}</h1>
+                <p class="fs-3 mt-1 mb-2">{{articles.article_sub_title|raw}}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-block">
+    <div class="container mb-4">
+        <div class="row aos-init aos-animate" data-aos="fade-up">
+            {{articles.long_text_src|raw}}
+            <div class="col-12 col-lg-10 offset-lg-1 mb-1 mt-1">
+                <h2>Get in touch via form</h2>
+            </div>
+            <div class="col-12 offset-md-1 col-md-10 mb-5">
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN" ata-aos="fade" method="POST" enctype=" multipart/form-data">
+                    <input type="hidden" name="_csrf" id="_csrf" value="{{csrf|raw}}"/>
+                    <input type="hidden" name="action" id="action" value="contactus"/>
+                    <div class="form-floating mb-1">
+                        <input class="form-control" id="name" name="name" type="text" placeholder="Name" data-sb-validations="required">
+                        <label for="name">Name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <input class="form-control" id="companyOrganisation" name="companyOrganisation" type="text" placeholder="Company / Organisation" data-sb-validations="required">
+                        <label for="companyOrganisation">Company / Organisation</label>
+                        <div class="invalid-feedback" data-sb-feedback="companyOrganisation:required">Company / Organisation is required.</div>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <input class="form-control" id="emailAddress" name="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email">
+                        <label for="emailAddress">Email Address</label>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address is not valid.</div>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <input class="form-control" id="telephoneNumber" name="telephoneNumber" type="text" placeholder="Telephone Number" data-sb-validations="required">
+                        <label for="telephoneNumber">Telephone Number</label>
+                        <div class="invalid-feedback" data-sb-feedback="telephoneNumber:required">Telephone Number is required.</div>
+                    </div>
+                    <div class="form-floating mb-1">
+                        <textarea class="form-control" id="message" name="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations=""></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="input-group mb-2">
+                        <label class="input-group-text" for="inputGroupFile01">Attachments</label>
+                        <input class="form-control" id="inputGroupFile01" name="inputGroupFile01" type="file" accept=".doc,.pdf">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label d-block">Please confirm you have read and agree to our privacy notice
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" id="privacyNotice" type="checkbox" name="privacyNotice" data-sb-validations="required">
+                                <label class="form-check-label" for="yes"></label>
+                            </div>
+                        </label>
+                        <div class="invalid-feedback" data-sb-feedback="privacyNotice:required"></div>
+                    </div>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-1">
+                            <div class="fw-bolder">Form submission successful!</div>
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                    </div>
+                </form>
+                <div class="col-12 col-md-12 mb-5 mt-2">
+                    <p class="small">
+                        <strong class="d-block">Privacy Notice</strong>If you provide any personal data to us either through this website or via email, you agree that we may store such personal data and that the collected personal data may be transferred to, processed by and used by us or any member of our group and their agents.  We (and such members of our group and their agents) shall only use personal data provided by you or collected from you via this website or email for the purposes of communicating with you and responding to any queries or requests made by you, and for any other reasonable purposes for which you have provided such information.  For example, if you apply for any job through this website or via email, we may store, transfer and use the personal data supplied by you pursuant to your application in connection with the processing of such application, including transferring such data to any agency for appropriate selection testing or searches.</p>
+                    <p class="small">We are committed to protecting your privacy and will take all reasonable steps to ensure that your personal data is kept secure against unauthorised access, loss, disclosure or destruction.  If you wish, you may also have a copy of the personal data held by us in relation to you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

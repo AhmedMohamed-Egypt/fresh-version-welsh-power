@@ -1,0 +1,45 @@
+<!-- TEAM BANNER-->
+<div class="team page-h-offset mb-5 mt-5">
+    <div class="container pt-4">
+        <div class="team__crumb mt-3" data-aos="fade-up">
+            <div class="team__crumb-position">{{team.position|raw}}
+                <div class="hero--band mt-1">
+                    <span>&nbsp;
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- content-->
+        <div class="team__content" data-aos="fade-up">
+            <div class="row mt-3">
+                <div class="col-12 col-md-6 mb-1">
+                    <h1 class="mt-0 mb-0">{{team.name|raw}}</h1>
+                    <div class="p-main mt-1 mb-1">
+                        <div class=".fs-5.mb-2">
+                            {{team.biography_intro|raw}}
+                        </div>
+
+                        {{team.biography|raw}}
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="team-card team-card--big">
+                        <div class="team-card__image">{{team.team_detail_image|raw}}</div>
+                        <div class="team-card__content">
+                            <div class="p-regular">{{team.detail_profile_text|raw}}</div>
+                            <div class="team-card__links">
+                                <a href="{{team.linkedin_address|raw}}" target="_blank">View on Linkedin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- TEAM BANNER-->
+<div class="team mt-7 mb-5">
+    <div class="container">
+        {{moreteams|raw}}
+    </div>
+</div>

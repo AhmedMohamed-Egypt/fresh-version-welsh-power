@@ -1,0 +1,27 @@
+---
+title: Article
+BodyClass: why-welsh-power
+---
+extends shared/_layout
+block content
+
+  include ../components/hero/_hero-grad.pug
+  section 
+    .container 
+      .row.mt-5.mb-2 
+        .col 
+          .text-center.fs-3 Our highly experienced team is both professional and approachable. Expert, strategic and imaginative. What we all have in common is a passion for energy and the motivation to deliver consistently high standards for all our clients.
+          .text-center.fs-3.fw-bold.mt-1 With Welsh Power you are in very safe hands.
+
+  include ../components/team/_more.pug
+  section.banner.wide.grad
+    .container
+      .row.justify-content-center.align-items-center.g-2
+        .col-12
+          h5.fs-2.text-center.text-white.mt-2.w-100.mx-auto.col-xs-11
+            | Welsh Power is a 100% employee-owned business - this ownership structure provides a robust platform for ensuring excellence and commitment from our staff for both our company and our customers
+        .col-12
+          img.d-block.mx-auto.my-5(src='./img/EOA_Members_RGB_SVG_EOA_Members_RGB_SVG-03 1.png', alt='', style='height: 125px;')
+  
+
+

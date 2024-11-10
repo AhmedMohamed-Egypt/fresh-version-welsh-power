@@ -1,0 +1,62 @@
+---
+title: News Detail
+---
+extends shared/_layout
+
+block content
+
+  .hero.blank.ratio.ratio-21x9.page-h-offset 
+    .hero__background
+      img(src="img/welshpower-rassau-ebbwvale-ngeso-stability-project_HERO.png" srcset="img/welshpower-rassau-ebbwvale-ngeso-stability-project_HERO.png 2x")
+      .hero--band
+        span &nbsp;     
+
+  section.news.content 
+    .container
+      .row 
+        .col-12.col-lg-10.news-title.mx-auto
+          h1.display-5.red.my-5.lh-1 Innovative National Grid ESO Stability Project Breaks Ground in South Wales
+      .row 
+       
+        .col-12.mt-2.offset-lg-1
+          h1 {{pretext.source}
+
+      .row.d-flex    
+          .col-12.mt-2.col-lg-6.offset-lg-1
+            p.lead
+              | Welsh Power, the leading independent developer and operator of flexible generation, is now at the forefront of creating new ways to manage grid stability, which is essential if the UK is to achieve net zero carbon energy infrastructure.
+            p
+              | Welsh Power, working with its project development and finance partner, Quinbrook Infrastructure Partners, will install a synchronous condenser and flywheel at its site at Rassau in Ebbw Vale. The proven and maintenance friendly technology provides inertia and short circuit level to further strengthen the grid as well as reactive power for voltage control in the south western part of the country.  This is a groundbreaking project for Wales and the UK utilising innovative, world-class technology and local contractors and specialists.
+            p
+              | The technology will stabilize the operation of the power grid which in turn will allow more renewable electricity to be used on the network.  Historically, grid stability had been maintained by large, predominantly fossil fuel power plants with large, spinning synchronous generators.  However, as these plants retire and are replaced by non-synchronous, zero-emission renewable generation, the job of maintaining grid stability has become more challenging for the National Grid Electricity System Operator (NGESO).  This new technology, part of a world first approach to managing grid stability, will provide the same stability service as the old fossil fuel plants but with no emissions and at a lower overall cost.
+            p
+              | Welsh Power was awarded a contract to provide stability services to NGESO earlier this year and expects the new plant to be operational by autumn 2021.  Site clearance work started last week.
+              br
+              |   Quinbrook Infrastructure Partners is a specialist investment manager focused on lower carbon and renewable energy infrastructure investment and operational asset management in the UK, US and Australia. Quinbrook plans to commit significant capital to the UK energy sector over the coming years to develop and construct innovative and impactful infrastructure designed to aid the UK economic recovery and reduce carbon emissions.
+            p
+              strong Alastair Fraser, CEO Welsh Power said: 
+              br
+              | “We are very pleased to be working with Siemens and Quinbrook on this important project for NGESO and are excited about the prospects for the newly developing grid stability market in the UK and our company’s role in this market.”
+  
+            p
+              strong Chris Wickins, Director of Grid Services at Welsh Power: 
+              br
+              |   “This is a major milestone for UK grid stability and the result of a fantastic collaboration between Welsh Power, Quinbrook, National Grid ESO, Siemens and Western Power Distribution. Within 15 minutes of an instruction, our facility can provide approximately one per cent of the inertia needed to operate the grid safely - with zero emissions. This will support the growth of UK renewable energy and contribute to the UK’s progress towards its net-zero targets.”
+            p
+              | “Quinbrook’s UK investments to date are consistent with the UK Government’s policies to create a smarter, more resilient and flexible power system in the UK. We are delighted to partner with Welsh Power on this Rassau synchronous condenser and flywheel project and support National Grid ESO in managing the challenges presented by a massive scale-up in intermittent wind and solar projects by delivering high-impact investments such as this, which will enable even more renewable capacity to be built, reducing carbon emissions and facilitating the Net Zero transition” said Rory Quinlan, co-founder and managing partner of Quinbrook.
+            p
+              strong Julian Leslie, Head of Networks at National Grid ESO:
+              br
+              |    “It’s great to see the next step in our grid stability contract with Welsh Power."
+            p
+              | “The GB electricity system is one of the most advanced in the world, both in terms of reliability and the levels of renewable power, and we’re really excited to be adding to that with this new approach to operating the grid."
+            p
+              | “Our contracts for stability services are cheaper and greener, reducing emissions and saving money for electricity consumers – and are a huge step forward in our ambition to be able to operate the GB electricity system carbon free by 2025.”
+          
+          .col-12.mt-2.col-lg-3.offset-lg-1
+            .fs-4.fw-bolder “Our contracts for stability services are cheaper and greener, reducing emissions and saving money for electricity consumers – and are a huge step forward in our ambition to be able to operate the GB electricity system carbon free by 2025.”
+      .row 
+        .col-12.mt-2.offset-lg-1
+          h1 {{post-text.source}
+          
+  include ../components/section/_quote[1].pug

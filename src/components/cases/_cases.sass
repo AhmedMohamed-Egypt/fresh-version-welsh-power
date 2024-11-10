@@ -1,0 +1,67 @@
+// CASES
+.cases
+
+// case card
+.case-card, .news-card, .project-card
+  display: block
+  background: #FFFFFF
+  margin-bottom: 35px
+  box-shadow: 2px 2px 4px rgba(174, 174, 174, 0.5)
+  transition: box-shadow .25s $ease
+  &:hover
+    color: $fontColor
+    box-shadow: 3px 4px 4px 3px rgba(138, 133, 133, 0.5)
+    .case-card__cta
+      // color: #4500CF
+    img
+      transform: scale(1.1)
+      transition: 0.2s
+    .case-card__content
+      transition: 0.2s
+      
+  &__image
+    font-size: 0
+    img
+      width: 100%
+      overflow: hidden
+      transition: 0.2s
+  &__content
+    padding: 10px 10px 10px 16px
+    transition: 0.2s
+  &__name
+    font-size: 18px
+    line-height: 24px
+  &__cta
+    margin-top: 12px
+    font-size: 14px
+    font-weight: 700
+    line-height: 34px
+    color: #9B9B9B
+    transition: color .25s $ease
+    text-transform: uppercase
+    &:hover
+
+.projects .news-card:hover .case-card__content
+  background-color: #11AF4A
+  transition: 0.2s
+  .case-card__name, .case-card__cta
+    color: #fff
+
+.projects .news-card.empty
+  
+  &:hover
+    box-shadow: 2px 2px 4px rgba(174, 174, 174, 0.5)
+    
+  &:hover .case-card__content
+    background-color: #fff
+  
+  img
+    transform: none
+  .case-card__name
+      color: inherit
+    
+
+.projects .news-card.empty:hover 
+  .case-card__name
+    color: $fontColor
+
