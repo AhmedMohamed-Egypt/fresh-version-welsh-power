@@ -1,30 +1,23 @@
 // HEADER :: START
+- var  ulList = ['Home','Our Services','Mission & Values','Case Studies','Join Us','Get in Touch'];
 header.header
   .header__container.js-container-align(data-position="right" data-selector=".header")
     .header__wrapper
       .flex-wrapper.flex-fill
-        a(href="homepage.html").header__logo
+        a(href="homepage.html" class="header__logo d-block")
 
-          img.img-fluid(src='img/WelshPower_LOGO_w_stapline.svg')
+          img.img-fluid(src='img/logo-tf.svg')
           //- svg.ico.ico-color-logo
           //-   use(xlink:href='/img/logo.svg')
           //- +svgColor("logo_welsh")
           //- img.img-fluid(src='img/wplogo_2.png')
-      div 
-        ul.nav-secondary.col-lg-auto.me-lg-auto.mb-md-0.d-none.d-lg-block.text-end.m-0
-          li 
-            a(href="#") Contact us
-          li 
-            a(href="#") News &amp; Careers  
+      div(class="header__navLinks")
+        
         ul.nav.col-lg-auto.me-lg-auto.mb-md-0.d-none.d-lg-block
-          li
-            a.nav-link.px-2.link-dark(href='#') Home
-          li
-            a.nav-link.px-2.link-dark(href='#') Asset Management
-          li
-            a.nav-link.px-2.link-dark(href='#') Developing and Delivering Assets
-          li
-            a.nav-link.px-2.link-dark.active(href='whyWP.html') Why Welsh Power              
+         each val,index in ulList
+          li 
+           a(href="#" class=`${index===0?'bg-tfYllow':''}  px-3 link-dark roboto-font f-600 color-tfNavy`)= val
+                       
       .header__hamburger.d-lg-block.d-lg-none
         .hamburger.hamburger--squeeze(js-hamburger)
           .hamburger-box

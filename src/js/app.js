@@ -1,18 +1,10 @@
-
-
-
-
-
-
-
-
-
 // PRE-initialization
 var APP = window.APP || {};
 APP.Dev = APP.Dev || {};
 APP.Browser = APP.Browser || {};
 APP.Plugins = APP.Plugins || {};
 APP.Components = APP.Components || {};
+console.log(APP)
 
 // force scroll to top on initial load
 // window.onbeforeunload = function() {

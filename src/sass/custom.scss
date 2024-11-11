@@ -51,14 +51,18 @@ h6 {
 }
 
 .nav .nav-link {
+    /*
     font-family: 'Ubuntu', sans-serif;
     font-weight: 600;
     color: #535657;
     border: 3px solid transparent;
     line-height: 35px;
+    */
     &:hover {
+        /*
         color: $wp_red;
         border-bottom: 3px solid $wp_red;
+        */
     }
 }
 
@@ -606,7 +610,7 @@ a.btn-outline-danger:hover {
     font-weight: 600;
 }
 ul.nav {
-    border-top: 1px solid #616161;
+   // border-top: 1px solid #616161;
 
 }
         

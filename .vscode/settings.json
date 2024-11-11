@@ -1,0 +1,9 @@
+{
+  "workbench.settings.useSplitJSON": false,
+  "workbench.editor.showTabs": true,
+  "workbench.editor.enablePreview": true,
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  }
+}
