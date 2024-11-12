@@ -1,6 +1,7 @@
 //////////
 // SLIDERS
 //////////
+
 (function($, APP) {
   APP.Plugins.Sliders = {
     data: {
@@ -153,3 +154,4 @@
     },
   };
 })(jQuery, window.APP);
+

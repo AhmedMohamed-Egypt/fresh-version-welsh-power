@@ -1,0 +1,8 @@
+- var List=[{no:320,title:"Number of projects completed since 2010",theme:'th-white'},{no:56,title:"Apprentices taken on this year alone",theme:'th-yellow'},{no:4320,title:"Peple helped via community housing assiciations",theme:'th-min-green'}]
+section(class="no-of-projects")
+ .container
+  div(class="bg-tfBlue d-flex no-of-projects__container justify-content-evenly py-5")
+   each val in List 
+    div(class=`${val.theme}`)
+     h3(class="size-60 f-900 mb-0")=val.no 
+     p(class="f-600 size-20")=val.title

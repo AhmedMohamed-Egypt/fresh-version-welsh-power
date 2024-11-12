@@ -25,4 +25,7 @@
       $(window).on('resize', debounce(this.setBreakpoint, 200));
     },
   };
+
+
 })(jQuery, window.APP);
+

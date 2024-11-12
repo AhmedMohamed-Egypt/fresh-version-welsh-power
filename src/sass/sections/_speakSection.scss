@@ -1,0 +1,28 @@
+.speakSection{
+    background-color: $tfGrey;
+    padding-bottom: 100px;
+.carousel-item {
+    >div{
+        min-height: 250px !important;
+        h5{
+            margin-bottom: 0;
+        }
+    }
+}
+.carousel-indicators{
+    position: static;
+    button{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $tfBlue !important;
+        opacity: 1;
+        &:not(:last-child){
+            margin-right: 16px;
+        }
+        &.active{
+            background-color: $tfYellow !important;
+        }
+    }
+}
+}

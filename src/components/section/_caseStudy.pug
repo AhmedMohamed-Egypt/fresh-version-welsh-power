@@ -1,0 +1,15 @@
+- var List = [{imgsrc:'img/case-1.png',title:'Company/ Development Name',subTtitle:'General Location in the UK',theme:'yellow-color'},{imgsrc:'img/case-2.png',title:'Company/ Development Name',subTtitle:'General Location in the UK',theme:'blue-color'}]
+section(class="case-study")
+ .container 
+  div(class="case-study__container")
+   .row 
+    .col 
+     h3(class="tfBluecolor size-64 f-900 lh-s3 case-study__mainTitle") Case Studies 
+     p(class="color-tfNavy size-20 f-400 lh-s3") Check out our case studies on the services that we provide 
+    each val in List 
+     .col
+      a(href="#" class=`d-block ${val.theme}`)
+       img(src=`${val.imgsrc}` class="img-fluid")
+       h3(class="size-22 color-tfNavy f-600 mb-0 mt-1")=val.title 
+       h2(class="size-18 color-tfNavy f-400")=val.subTtitle
+    
